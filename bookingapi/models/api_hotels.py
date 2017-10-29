@@ -115,7 +115,7 @@ class ApiHotels(object):
         """
         return self._hotels
 
-    @hotel.setter
+    @hotels.setter
     def hotels(self, hotels):
         """
         Sets the hotels of this ApiHotels.
