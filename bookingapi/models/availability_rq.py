@@ -44,7 +44,7 @@ class AvailabilityRQ(object):
         'aif_use': 'bool',
         'platform': 'int',
         'language': 'str',
-        'occupancy': 'list[ApiOccupancy]',
+        'occupancies': 'list[ApiOccupancy]',
         'keywords': 'ApiKeywordsFilter',
         'hotels': 'ApiHotelsFilter',
         'review': 'list[ApiReviewFilter]',
@@ -65,14 +65,14 @@ class AvailabilityRQ(object):
         'aif_use': 'aifUse',
         'platform': 'platform',
         'language': 'language',
-        'occupancy': 'occupancy',
+        'occupancies': 'occupancies',
         'keywords': 'keywords',
         'hotels': 'hotels',
         'review': 'review',
         'accommodation': 'accommodation'
     }
 
-    def __init__(self, echo_token=None, stay=None, geolocation=None, destination=None, filter=None, boards=None, rooms=None, daily_rate=False, source_market=None, source=None, aif_use=False, platform=None, language=None, occupancy=None, keywords=None, hotels=None, review=None, accommodation=None):
+    def __init__(self, echo_token=None, stay=None, geolocation=None, destination=None, filter=None, boards=None, rooms=None, daily_rate=False, source_market=None, source=None, aif_use=False, platform=None, language=None, occupancies=None, keywords=None, hotels=None, review=None, accommodation=None):
         """
         AvailabilityRQ - a model defined in Swagger
         """
@@ -90,7 +90,7 @@ class AvailabilityRQ(object):
         self._aif_use = None
         self._platform = None
         self._language = None
-        self._occupancy = None
+        self.occupancies = None
         self._keywords = None
         self._hotels = None
         self._review = None
@@ -122,7 +122,7 @@ class AvailabilityRQ(object):
         if language is not None:
           self.language = language
         if occupancy is not None:
-          self.occupancy = occupancy
+          self.occupancies = occupancies
         if keywords is not None:
           self.keywords = keywords
         if hotels is not None:
@@ -412,25 +412,25 @@ class AvailabilityRQ(object):
         self._language = language
 
     @property
-    def occupancy(self):
+    def occupancies(self):
         """
-        Gets the occupancy of this AvailabilityRQ.
+        Gets the occupancies of this AvailabilityRQ.
 
-        :return: The occupancy of this AvailabilityRQ.
+        :return: The occupancies of this AvailabilityRQ.
         :rtype: list[ApiOccupancy]
         """
         return self._occupancy
 
-    @occupancy.setter
-    def occupancy(self, occupancy):
+    @occupancies.setter
+    def occupancies(self, occupancies):
         """
-        Sets the occupancy of this AvailabilityRQ.
+        Sets the occupancies of this AvailabilityRQ.
 
-        :param occupancy: The occupancy of this AvailabilityRQ.
+        :param occupancies: The occupancies of this AvailabilityRQ.
         :type: list[ApiOccupancy]
         """
 
-        self._occupancy = occupancy
+        self.occupancies = occupancies
 
     @property
     def keywords(self):
