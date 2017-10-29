@@ -94,7 +94,7 @@ class ApiHotel(object):
         'credit_card': 'creditCard'
     }
 
-    def __init__(self, check_out=None, check_in=None, code=None, name=None, description=None, image=None, category_code=None, category_name=None, destination_code=None, destination_name=None, zone_code=None, zone_name=None, latitude=None, longitude=None, giata=None, min_rate=None, max_rate=None, total_selling_rate=None, total_net=None, pending_amount=None, currency=None, supplier=None, client_comments=None, cancellation_amount=None, upselling=None, keyword=None, review=None, room=None, credit_card=None):
+    def __init__(self, check_out=None, check_in=None, code=None, name=None, description=None, image=None, category_code=None, category_name=None, destination_code=None, destination_name=None, zone_code=None, zone_name=None, latitude=None, longitude=None, giata=None, min_rate=None, max_rate=None, total_selling_rate=None, total_net=None, pending_amount=None, currency=None, supplier=None, client_comments=None, cancellation_amount=None, upselling=None, keyword=None, review=None, rooms=None, credit_card=None):
         """
         ApiHotel - a model defined in Swagger
         """
