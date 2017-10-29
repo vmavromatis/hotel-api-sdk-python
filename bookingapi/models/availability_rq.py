@@ -121,7 +121,7 @@ class AvailabilityRQ(object):
           self.platform = platform
         if language is not None:
           self.language = language
-        if occupancy is not None:
+        if occupancies is not None:
           self.occupancies = occupancies
         if keywords is not None:
           self.keywords = keywords
@@ -419,7 +419,7 @@ class AvailabilityRQ(object):
         :return: The occupancies of this AvailabilityRQ.
         :rtype: list[ApiOccupancy]
         """
-        return self._occupancy
+        return self._occupancies
 
     @occupancies.setter
     def occupancies(self, occupancies):
