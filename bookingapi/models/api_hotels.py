@@ -31,79 +31,79 @@ class ApiHotels(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'check_in': 'date',
-        'check_out': 'date',
+        'checkIn': 'date',
+        'checkOut': 'date',
         'hotels': 'list[ApiHotel]',
         'total': 'int'
     }
 
     attribute_map = {
-        'check_in': 'checkIn',
-        'check_out': 'checkOut',
+        'checkIn': 'checkIn',
+        'checkOut': 'checkOut',
         'hotels': 'hotels',
         'total': 'total'
     }
 
-    def __init__(self, check_in=None, check_out=None, hotels=None, total=None):
+    def __init__(self, checkIn=None, checkOut=None, hotels=None, total=None):
         """
         ApiHotels - a model defined in Swagger
         """
 
-        self._check_in = None
-        self._check_out = None
+        self._checkIn = None
+        self._checkOut = None
         self._hotels = None
         self._total = None
 
-        if check_in is not None:
-          self.check_in = check_in
-        if check_out is not None:
-          self.check_out = check_out
+        if checkIn is not None:
+          self.checkIn = checkIn
+        if checkOut is not None:
+          self.checkOut = checkOut
         if hotels is not None:
           self.hotels = hotels
         if total is not None:
           self.total = total
 
     @property
-    def check_in(self):
+    def checkIn(self):
         """
-        Gets the check_in of this ApiHotels.
+        Gets the checkIn of this ApiHotels.
 
-        :return: The check_in of this ApiHotels.
+        :return: The checkIn of this ApiHotels.
         :rtype: date
         """
-        return self._check_in
+        return self._checkIn
 
-    @check_in.setter
-    def check_in(self, check_in):
+    @checkIn.setter
+    def checkIn(self, checkIn):
         """
-        Sets the check_in of this ApiHotels.
+        Sets the checkIn of this ApiHotels.
 
-        :param check_in: The check_in of this ApiHotels.
+        :param checkIn: The checkIn of this ApiHotels.
         :type: date
         """
 
-        self._check_in = check_in
+        self._checkIn = checkIn
 
     @property
-    def check_out(self):
+    def checkOut(self):
         """
-        Gets the check_out of this ApiHotels.
+        Gets the checkOut of this ApiHotels.
 
-        :return: The check_out of this ApiHotels.
+        :return: The checkOut of this ApiHotels.
         :rtype: date
         """
-        return self._check_out
+        return self._checkOut
 
-    @check_out.setter
-    def check_out(self, check_out):
+    @checkOut.setter
+    def checkOut(self, checkOut):
         """
-        Sets the check_out of this ApiHotels.
+        Sets the checkOut of this ApiHotels.
 
-        :param check_out: The check_out of this ApiHotels.
+        :param checkOut: The checkOut of this ApiHotels.
         :type: date
         """
 
-        self._check_out = check_out
+        self._checkOut = checkOut
 
     @property
     def hotels(self):
@@ -199,3 +199,4 @@ class ApiHotels(object):
         Returns true if both objects are not equal
         """
         return not self == other
+
