@@ -36,7 +36,7 @@ class Room(object):
         'code': 'str',
         'name': 'str',
         'pax': 'list[ApiPax]',
-        'rate': 'list[ApiRate]'
+        'rates': 'list[ApiRate]'
     }
 
     attribute_map = {
@@ -45,10 +45,10 @@ class Room(object):
         'code': 'code',
         'name': 'name',
         'pax': 'pax',
-        'rate': 'rate'
+        'rates': 'rates'
     }
 
-    def __init__(self, status=None, id=None, code=None, name=None, pax=None, rate=None):
+    def __init__(self, status=None, id=None, code=None, name=None, pax=None, rates=None):
         """
         Room - a model defined in Swagger
         """
@@ -58,7 +58,7 @@ class Room(object):
         self._code = None
         self._name = None
         self._pax = None
-        self._rate = None
+        self._rates = None
 
         if status is not None:
           self.status = status
@@ -70,8 +70,8 @@ class Room(object):
           self.name = name
         if pax is not None:
           self.pax = pax
-        if rate is not None:
-          self.rate = rate
+        if rates is not None:
+          self.rates = rates
 
     @property
     def status(self):
@@ -185,25 +185,25 @@ class Room(object):
         self._pax = pax
 
     @property
-    def rate(self):
+    def rates(self):
         """
-        Gets the rate of this Room.
+        Gets the rates of this Room.
 
-        :return: The rate of this Room.
+        :return: The rates of this Room.
         :rtype: list[ApiRate]
         """
-        return self._rate
+        return self._rates
 
-    @rate.setter
-    def rate(self, rate):
+    @rates.setter
+    def rates(self, rates):
         """
-        Sets the rate of this Room.
+        Sets the rates of this Room.
 
-        :param rate: The rate of this Room.
+        :param rates: The rates of this Room.
         :type: list[ApiRate]
         """
 
-        self._rate = rate
+        self._rates = rates
 
     def to_dict(self):
         """
