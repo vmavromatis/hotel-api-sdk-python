@@ -58,7 +58,7 @@ class ApiHotel(object):
         'upselling': 'ApiUpselling',
         'keyword': 'list[ApiKeyword]',
         'review': 'list[ApiReview]',
-        'room': 'list[Room]',
+        'rooms': 'list[Room]',
         'credit_card': 'list[ApiCreditCard]'
     }
 
@@ -90,7 +90,7 @@ class ApiHotel(object):
         'upselling': 'upselling',
         'keyword': 'keyword',
         'review': 'review',
-        'room': 'room',
+        'rooms': 'rooms',
         'credit_card': 'creditCard'
     }
 
@@ -126,7 +126,7 @@ class ApiHotel(object):
         self._upselling = None
         self._keyword = None
         self._review = None
-        self._room = None
+        self._rooms = None
         self._credit_card = None
 
         if check_out is not None:
@@ -183,8 +183,8 @@ class ApiHotel(object):
           self.keyword = keyword
         if review is not None:
           self.review = review
-        if room is not None:
-          self.room = room
+        if rooms is not None:
+          self.rooms = rooms
         if credit_card is not None:
           self.credit_card = credit_card
 
@@ -756,25 +756,25 @@ class ApiHotel(object):
         self._review = review
 
     @property
-    def room(self):
+    def rooms(self):
         """
-        Gets the room of this ApiHotel.
+        Gets the rooms of this ApiHotel.
 
-        :return: The room of this ApiHotel.
+        :return: The rooms of this ApiHotel.
         :rtype: list[Room]
         """
         return self._room
 
-    @room.setter
-    def room(self, room):
+    @rooms.setter
+    def rooms(self, rooms):
         """
-        Sets the room of this ApiHotel.
+        Sets the rooms of this ApiHotel.
 
-        :param room: The room of this ApiHotel.
+        :param rooms: The rooms of this ApiHotel.
         :type: list[Room]
         """
 
-        self._room = room
+        self._rooms = rooms
 
     @property
     def credit_card(self):
