@@ -430,7 +430,7 @@ class AvailabilityRQ(object):
         :type: list[ApiOccupancy]
         """
 
-        self.occupancies = occupancies
+        self._occupancies = occupancies
 
     @property
     def keywords(self):
