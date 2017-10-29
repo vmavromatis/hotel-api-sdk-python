@@ -33,14 +33,14 @@ class ApiHotels(object):
     swagger_types = {
         'check_in': 'date',
         'check_out': 'date',
-        'hotel': 'list[ApiHotel]',
+        'hotels': 'list[ApiHotel]',
         'total': 'int'
     }
 
     attribute_map = {
         'check_in': 'checkIn',
         'check_out': 'checkOut',
-        'hotel': 'hotel',
+        'hotels': 'hotel',
         'total': 'total'
     }
 
@@ -51,7 +51,7 @@ class ApiHotels(object):
 
         self._check_in = None
         self._check_out = None
-        self._hotel = None
+        self._hotels = None
         self._total = None
 
         if check_in is not None:
@@ -59,7 +59,7 @@ class ApiHotels(object):
         if check_out is not None:
           self.check_out = check_out
         if hotel is not None:
-          self.hotel = hotel
+          self.hotels = hotel
         if total is not None:
           self.total = total
 
@@ -106,25 +106,25 @@ class ApiHotels(object):
         self._check_out = check_out
 
     @property
-    def hotel(self):
+    def hotels(self):
         """
-        Gets the hotel of this ApiHotels.
+        Gets the hotels of this ApiHotels.
 
-        :return: The hotel of this ApiHotels.
+        :return: The hotels of this ApiHotels.
         :rtype: list[ApiHotel]
         """
-        return self._hotel
+        return self._hotels
 
     @hotel.setter
-    def hotel(self, hotel):
+    def hotels(self, hotel):
         """
-        Sets the hotel of this ApiHotels.
+        Sets the hotels of this ApiHotels.
 
-        :param hotel: The hotel of this ApiHotels.
+        :param hotels: The hotels of this ApiHotels.
         :type: list[ApiHotel]
         """
 
-        self._hotel = hotel
+        self._hotels = hotel
 
     @property
     def total(self):
