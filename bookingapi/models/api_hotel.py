@@ -763,7 +763,7 @@ class ApiHotel(object):
         :return: The rooms of this ApiHotel.
         :rtype: list[Room]
         """
-        return self._room
+        return self._rooms
 
     @rooms.setter
     def rooms(self, rooms):
