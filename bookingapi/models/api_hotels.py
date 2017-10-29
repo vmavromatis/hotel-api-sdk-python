@@ -40,11 +40,11 @@ class ApiHotels(object):
     attribute_map = {
         'check_in': 'checkIn',
         'check_out': 'checkOut',
-        'hotels': 'hotel',
+        'hotels': 'hotels',
         'total': 'total'
     }
 
-    def __init__(self, check_in=None, check_out=None, hotel=None, total=None):
+    def __init__(self, check_in=None, check_out=None, hotels=None, total=None):
         """
         ApiHotels - a model defined in Swagger
         """
@@ -58,8 +58,8 @@ class ApiHotels(object):
           self.check_in = check_in
         if check_out is not None:
           self.check_out = check_out
-        if hotel is not None:
-          self.hotels = hotel
+        if hotels is not None:
+          self.hotels = hotels
         if total is not None:
           self.total = total
 
@@ -116,7 +116,7 @@ class ApiHotels(object):
         return self._hotels
 
     @hotel.setter
-    def hotels(self, hotel):
+    def hotels(self, hotels):
         """
         Sets the hotels of this ApiHotels.
 
@@ -124,7 +124,7 @@ class ApiHotels(object):
         :type: list[ApiHotel]
         """
 
-        self._hotels = hotel
+        self._hotels = hotels
 
     @property
     def total(self):
