@@ -32,25 +32,25 @@ class ApiBookingRoom(object):
     """
     swagger_types = {
         'rate_key': 'str',
-        'pax': 'list[ApiPax]'
+        'paxes': 'list[ApiPax]'
     }
 
     attribute_map = {
         'rate_key': 'rateKey',
-        'pax': 'pax'
+        'paxes': 'paxes'
     }
 
-    def __init__(self, rate_key=None, pax=None):
+    def __init__(self, rate_key=None, paxes=None):
         """
         ApiBookingRoom - a model defined in Swagger
         """
 
         self._rate_key = None
-        self._pax = None
+        self._paxes = None
 
         self.rate_key = rate_key
-        if pax is not None:
-          self.pax = pax
+        if paxes is not None:
+          self.paxes = paxes
 
     @property
     def rate_key(self):
@@ -76,25 +76,25 @@ class ApiBookingRoom(object):
         self._rate_key = rate_key
 
     @property
-    def pax(self):
+    def paxes(self):
         """
-        Gets the pax of this ApiBookingRoom.
+        Gets the paxes of this ApiBookingRoom.
 
-        :return: The pax of this ApiBookingRoom.
+        :return: The paxes of this ApiBookingRoom.
         :rtype: list[ApiPax]
         """
-        return self._pax
+        return self._paxes
 
-    @pax.setter
-    def pax(self, pax):
+    @paxes.setter
+    def paxes(self, paxes):
         """
-        Sets the pax of this ApiBookingRoom.
+        Sets the paxes of this ApiBookingRoom.
 
-        :param pax: The pax of this ApiBookingRoom.
+        :param paxes: The paxes of this ApiBookingRoom.
         :type: list[ApiPax]
         """
 
-        self._pax = pax
+        self._paxes = paxes
 
     def to_dict(self):
         """
