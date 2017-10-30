@@ -70,12 +70,7 @@ except ApiException as e:
 ```
 ## Workflow
 
-Check the wiki for operations examples:
-
-- [Availability Request - Hotels](https://github.com/vmavromatis/hotel-api-sdk-python/wiki/Availability-RQ-(hotels))  
-- [Availability Request - Geolocation](https://github.com/vmavromatis/hotel-api-sdk-python/wiki/Availability-RQ-(geolocation))  
-- [Availability Request - Destination](https://github.com/vmavromatis/hotel-api-sdk-python/wiki/Availability-RQ-(destination))  
-- [Checkrates Request](https://github.com/vmavromatis/hotel-api-sdk-python/wiki/Checkrates-RQ)  
+[Refer to the wiki page for a basic workfow](https://github.com/vmavromatis/hotel-api-sdk-python/wiki)
 
 
 ## Documentation for API Endpoints
