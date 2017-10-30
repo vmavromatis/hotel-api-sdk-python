@@ -38,7 +38,7 @@ class BookingRQ(object):
         'remark': 'str',
         'voucher': 'ApiVoucher',
         'language': 'str',
-        'room': 'list[ApiBookingRoom]'
+        'rooms': 'list[ApiBookingRoom]'
     }
 
     attribute_map = {
@@ -49,10 +49,10 @@ class BookingRQ(object):
         'remark': 'remark',
         'voucher': 'voucher',
         'language': 'language',
-        'room': 'room'
+        'rooms': 'rooms'
     }
 
-    def __init__(self, echo_token=None, holder=None, payment_data=None, client_reference=None, remark=None, voucher=None, language=None, room=None):
+    def __init__(self, echo_token=None, holder=None, payment_data=None, client_reference=None, remark=None, voucher=None, language=None, rooms=None):
         """
         BookingRQ - a model defined in Swagger
         """
@@ -64,7 +64,7 @@ class BookingRQ(object):
         self._remark = None
         self._voucher = None
         self._language = None
-        self._room = None
+        self._rooms = None
 
         if echo_token is not None:
           self.echo_token = echo_token
@@ -78,7 +78,7 @@ class BookingRQ(object):
           self.voucher = voucher
         if language is not None:
           self.language = language
-        self.room = room
+        self.rooms = rooms
 
     @property
     def echo_token(self):
@@ -240,27 +240,27 @@ class BookingRQ(object):
         self._language = language
 
     @property
-    def room(self):
+    def rooms(self):
         """
-        Gets the room of this BookingRQ.
+        Gets the rooms of this BookingRQ.
 
-        :return: The room of this BookingRQ.
+        :return: The rooms of this BookingRQ.
         :rtype: list[ApiBookingRoom]
         """
-        return self._room
+        return self._rooms
 
-    @room.setter
-    def room(self, room):
+    @rooms.setter
+    def rooms(self, rooms):
         """
         Sets the room of this BookingRQ.
 
-        :param room: The room of this BookingRQ.
+        :param rooms: The rooms of this BookingRQ.
         :type: list[ApiBookingRoom]
         """
-        if room is None:
-            raise ValueError("Invalid value for `room`, must not be `None`")
+        if rooms is None:
+            raise ValueError("Invalid value for `rooms`, must not be `None`")
 
-        self._room = room
+        self._rooms = rooms
 
     def to_dict(self):
         """
