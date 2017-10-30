@@ -34,7 +34,7 @@ import bookingapi
 
 ## Getting Started
 
-Please follow the [installation procedure](#installation--usage) and then run the following:
+Please follow the [installation procedure](#installation--usage) and then run the following to make a status request:
 
 ```python
 from __future__ import print_function
@@ -68,6 +68,15 @@ except ApiException as e:
 
 
 ```
+## Workflow
+
+Check the wiki for operations examples:
+
+- [Availability Request - Hotels](https://github.com/vmavromatis/hotel-api-sdk-python/wiki/Availability-RQ-(hotels))  
+- [Availability Request - Geolocation](https://github.com/vmavromatis/hotel-api-sdk-python/wiki/Availability-RQ-(geolocation))  
+- [Availability Request - Destination](https://github.com/vmavromatis/hotel-api-sdk-python/wiki/Availability-RQ-(destination))  
+- [Checkrates Request](https://github.com/vmavromatis/hotel-api-sdk-python/wiki/Checkrates-RQ)  
+
 
 ## Documentation for API Endpoints
 
