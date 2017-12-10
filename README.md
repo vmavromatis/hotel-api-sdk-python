@@ -169,5 +169,5 @@ More info at https://developer.hotelbeds.com/docs/read/Home#authentication
 
 ## Author
 
-apitude@hotelbeds.com
+developer@hotelbeds.com
 
